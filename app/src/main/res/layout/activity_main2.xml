@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="100dp"
+        android:src="@mipmap/ic_launcher"
+        android:transitionName="imageTransition"
+        android:layout_gravity="center"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:backgroundTint="#DCDCDC"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Shubham Mahalkar"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:transitionName="nameTransition"
+                android:textStyle="bold"
+                android:textColor="#171717"
+                android:fontFamily="@font/nunito_semibold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="YouTube - code stance"
+                android:gravity="center"
+                android:layout_marginTop="4dp"
+                android:textSize="16sp"
+                android:textColor="#171717"
+                android:fontFamily="@font/nunito_semibold"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
